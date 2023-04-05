@@ -1,0 +1,43 @@
+.chatbar{
+    width: 25%;
+    padding: 14px 12px 14px 12px;
+    position: fixed;
+    right: 0;
+    top: 68px;
+}
+
+.chatbar-contacts-inner{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+}
+.chatbar-contacts-inner-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+.chatbar-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.chat-contacts-wrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.chatbar-contacts-inner{
+    position: absolute;
+}
+.chat-contacts-wrap p{
+    margin-left: 44px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.chatbar-contacts button{
+    border: none;
+}

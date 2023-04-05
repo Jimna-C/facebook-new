@@ -1,0 +1,86 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    padding: 0;
+    height: 70px;
+    background: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+.navbar-fir{
+    width: 30%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+}
+.srch-box{
+    background: #f0f2f5;
+    padding: 10px 15px;
+    border-radius: 30px;
+    position: relative;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.srch-box input{
+    background: none;
+    border: none;
+    text-align: center;
+    height: 26px;
+}
+.srch-icon{
+    color: silver;
+    font-size: 17px;
+    position: absolute;
+}
+.navbar-mid{
+    width: 40%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #606770;
+}
+.middle-icon{
+    padding: 10px;
+    font-size: 22px;
+}
+.middle-icon:hover{
+    color: #0d8cf1;
+}
+.navbar-las{
+    width: 30%;
+    display: flex;
+    padding: 2%;
+    align-items: center;
+    justify-content: flex-end;
+}
+.navbar-las-icon{
+    background: #f3f3f3;
+    border-radius: 50%;
+    font-size: 24px;
+    padding: 3px;
+}
+.navbar-las-profile{
+    display: flex;
+    align-items: center;
+}
+.navbar-las-profile img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.middle-img{
+    height: 28px;
+    width: 28px;
+}
+.bs{
+    height: 40px;
+    width: 40px;
+}
+.navbar-las span{
+    margin-right: 8px;
+}

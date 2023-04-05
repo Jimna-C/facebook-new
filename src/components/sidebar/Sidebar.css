@@ -1,0 +1,61 @@
+.sidebar{
+    width: 25%;
+    position: fixed;
+    left: 0;
+    top: 68px;
+}
+.find_friend{
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/BHDNlEdwMgn.png);
+    background-position: 0 -296px;
+    
+}
+.sidebar-wrap{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.fnt{
+    font-size: 16px;
+    margin-left: 10px;
+}
+.grps{
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/BHDNlEdwMgn.png);
+    background-position: 0 -74px;
+    
+}
+.comm{
+    background-size: auto;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.market-place{
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/BHDNlEdwMgn.png);
+    background-position: 0 -407px;
+}
+.watch{
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/BHDNlEdwMgn.png);
+    background-position: 0 -518px;
+    
+}
+.memories{
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/BHDNlEdwMgn.png);
+    background-position: 0 -444px;
+}
+.saved{
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/BHDNlEdwMgn.png);
+    background-position: 0 -185px; 
+}
+.pages{
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/BHDNlEdwMgn.png);
+    background-position: 0 -111px;
+}
+.events{
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/BHDNlEdwMgn.png);
+    background-position: 0 0;
+}
+.profile-comm{
+    width: 100%;
+    border-radius: 50%;
+}

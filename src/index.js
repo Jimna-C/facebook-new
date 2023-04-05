@@ -3,11 +3,29 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { configureStore } from '@reduxjs/toolkit';
+import { Provider } from 'react-redux';
+import newsfeedReducer ,{newsfeedFetch} from './components/features/newsfeedSlice';
+import chatscreenReducer ,{chatscreenFetch} from './components/features/chatscreenSlice';
+
+const store=configureStore({
+  reducer:{
+    newsfeed:newsfeedReducer,
+    chatscreen:chatscreenReducer
+
+  },
+  
+});
+
+store.dispatch(newsfeedFetch());
+store.dispatch(chatscreenFetch());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider store={store}>
     <App />
+    </Provider>
   </React.StrictMode>
 );
 
