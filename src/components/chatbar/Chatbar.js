@@ -20,7 +20,7 @@ const Chatbar = () => {
       </div>
       <div className='chatbar-contacts'>
         {items.map((chats)=>(
-          <button onClick={()=>handleOpenChat(chats.id)} className='chat-contacts-wrap'><span className='chatbar-contacts-inner'><img alt="image" className='chatbar-contacts-inner-img' src={chats.image}/></span><p>{chats.title}</p></button> 
+          <button onClick={()=>handleOpenChat(chats.id)} className='chat-contacts-wrap'><span className='chatbar-contacts-inner'><img alt="vision" className='chatbar-contacts-inner-img' src={chats.image}/></span><p>{chats.title}</p></button> 
         ))}
        
       </div>

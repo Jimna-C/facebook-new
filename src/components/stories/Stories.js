@@ -11,9 +11,9 @@ const Stories = () => {
   console.log(selected);
   return (
     <div className='posts-story-wrap'>
-    <div className='posts-stories'><img alt="image" className='posts-stories-img' src={profileOri}/><span className='posts-stories-inner'><GrAdd  className='posts-stories-img-inner'/></span><p>Add to story</p></div>
+    <div className='posts-stories'><img alt="vision" className='posts-stories-img' src={profileOri}/><span className='posts-stories-inner'><GrAdd  className='posts-stories-img-inner'/></span><p>Add to story</p></div>
     {selected.map((selected)=>(
-    <div className='posts-stories'><img alt="image" src={selected.storyImage} className='posts-stories-img'/><span className='posts-stories-inner'><img alt="image" src={selected.image} className='posts-stories-img-inner'/></span><p>{selected.title}</p></div>
+    <div className='posts-stories'><img alt="vision" src={selected.storyImage} className='posts-stories-img'/><span className='posts-stories-inner'><img alt="vision" src={selected.image} className='posts-stories-img-inner'/></span><p>{selected.title}</p></div>
     ))}
     </div>
   )

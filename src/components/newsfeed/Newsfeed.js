@@ -82,7 +82,7 @@ var m=  JSON.parse(localStorage.getItem('test')) || [];
       <div className='newsfeed' key={feed.id}>
     <div className='feed-head'>
      <div className='feed-head-left'>
-       <img alt="image" src={feed.image}/>
+       <img alt="vision" src={feed.image}/>
        <div className='feed-head-left-inner'>
          <h3>{feed.title}</h3>
          <span className='feed-head-left-inner-det'><p>{feed.time}</p> <FaGlobeAmericas/></span>
@@ -96,7 +96,7 @@ var m=  JSON.parse(localStorage.getItem('test')) || [];
     <p>{feed.content}</p>
     </div>
  {feed.contentImage.length===0?"":<div className='feed-middle'>
-     <img alt="image" src={feed.contentImage}/>
+     <img alt="vision" src={feed.contentImage}/>
     </div>}
   
  
@@ -105,7 +105,7 @@ var m=  JSON.parse(localStorage.getItem('test')) || [];
        <div className='feed-last-fir-inner1'>
 
        
-       <span><img alt="image" className='feed-last-fir-icons' src={like}/><img alt="image" className='feed-last-fir-icons' src={fav}/><input type="text" value={feed.like}/></span>
+       <span><img alt="vision" className='feed-last-fir-icons' src={like}/><img alt="vision" className='feed-last-fir-icons' src={fav}/><input type="text" value={feed.like}/></span>
       
        </div>
        <div className='feed-last-fir-inner2'>
@@ -128,7 +128,7 @@ var m=  JSON.parse(localStorage.getItem('test')) || [];
       <div className='newsfeed' key={feed.id}>
     <div className='feed-head'>
      <div className='feed-head-left'>
-       <img alt="image" src={feed.image}/>
+       <img alt="vision" src={feed.image}/>
        <div className='feed-head-left-inner'>
          <h3>{feed.title}</h3>
          <span className='feed-head-left-inner-det'><p>{feed.time}</p> <FaGlobeAmericas/></span>
@@ -142,7 +142,7 @@ var m=  JSON.parse(localStorage.getItem('test')) || [];
     <p>{feed.content}</p>
     </div>
  {feed.contentImage.length===0?"":<div className='feed-middle'>
-     <img alt="image" src={feed.contentImage}/>
+     <img alt="vision" src={feed.contentImage}/>
     </div>}
   
  
@@ -151,7 +151,7 @@ var m=  JSON.parse(localStorage.getItem('test')) || [];
        <div className='feed-last-fir-inner1'>
 
        
-       <span><img alt="image" className='feed-last-fir-icons' src={like}/><img alt="image" className='feed-last-fir-icons' src={fav}/><input type="text" value={feed.like}/></span>
+       <span><img alt="vision" className='feed-last-fir-icons' src={like}/><img alt="vision" className='feed-last-fir-icons' src={fav}/><input type="text" value={feed.like}/></span>
       
        </div>
        <div className='feed-last-fir-inner2'>

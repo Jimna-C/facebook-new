@@ -42,7 +42,7 @@ const Navbar = () => {
 <span><IoMdAdd className='navbar-las-icon bs'/></span>
 <span><FaFacebookMessenger className='navbar-las-icon bs'/></span>
 <span><AiFillBell className='navbar-las-icon bs'/></span>
-<span className='navbar-las-profile bs'><img alt="image" src={profileOri}/></span>
+<span className='navbar-las-profile bs'><img alt="vision" src={profileOri}/></span>
 </div>
 </div>
   )

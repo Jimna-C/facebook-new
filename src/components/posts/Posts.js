@@ -20,18 +20,18 @@ const Posts = () => {
       <Stories/>
       <div className='posts-mind'>
          <div className='posts-min-fir'>
-          <img alt="image" src={profileOri}/>
+          <img alt="vision" src={profileOri}/>
           <input type="text" name="post" placeholder="What's on your mind , Jeneeta?" onClick={()=>handleCreatePost()}/>
          </div>
          <div className='posts-min-sec'>
             <div className='posts-sec-inner'>
-              <img alt="image" src={live}/><span>Live Video</span>
+              <img alt="vision" src={live}/><span>Live Video</span>
             </div>
             <div >
-              <button className='posts-sec-inner' onClick={()=>handleCreatePost()}><img alt="image" src={photo}/><span>Photo/video</span></button>
+              <button className='posts-sec-inner' onClick={()=>handleCreatePost()}><img alt="vision" src={photo}/><span>Photo/video</span></button>
             </div>
             <div className='posts-sec-inner'>
-              <img alt="image" src={feeling}/><span>Feeling/activity</span>
+              <img alt="vision" src={feeling}/><span>Feeling/activity</span>
             </div>
          </div>
       </div>
