@@ -12,7 +12,7 @@ const Chatscreen = () => {
     const [contentchat, setContentchat] = useState();
   const {chatId} = useParams();
   const {items}=useSelector(state=>state.chatscreen);
-  const chatdetail = items.find(items => items.id == chatId);
+  const chatdetail = items.find(items => items.id.toString() === chatId.toString());
   var chatarray=chatdetail.messages; 
 
  
