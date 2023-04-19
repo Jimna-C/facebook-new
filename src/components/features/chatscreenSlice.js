@@ -1,8 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import profileOri from '../../assets/profile_ori.jpg';
 import pro1 from '../../assets/profile_1.jpg';
-import fireworks from '../../assets/fire_works.jpeg';
-import spring from '../../assets/spring.jpg';
 import pro2 from '../../assets/profile_2.jpg';
 import pro3 from '../../assets/profile_3.jpg';
 import pro4 from '../../assets/profile_4.jpg';

@@ -1,6 +1,5 @@
 import React from 'react'
 import './Sidebar.css';
-import {FaUserFriends} from 'react-icons/fa';
 import Icon from '../../assets/icon_2.png';
 import Fav from '../../assets/icon_3.png';
 import profileOri from '../../assets/profile_ori.jpg';
@@ -9,13 +8,13 @@ const Sidebar = () => {
   return (
     <div className='sidebar'>
       <div className='sidebar-wrap'>
-      <span className='comm'><img className='profile-comm' src={profileOri}/></span><span className='fnt'>Jeneeta</span>
+      <span className='comm'><img alt="image" className='profile-comm' src={profileOri}/></span><span className='fnt'>Jeneeta</span>
       </div>
       <div className='sidebar-wrap'>
         <span className='find_friend comm'></span><span className='fnt'>Find friends</span>
       </div>
       <div className='sidebar-wrap'>
-        <span className='comm'><img src={Icon}/></span><span className='fnt'>Most recent</span>
+        <span className='comm'><img alt="image" src={Icon}/></span><span className='fnt'>Most recent</span>
       </div>
       <div className='sidebar-wrap'>
         <span className='grps comm'></span><span className='fnt'>Groups</span>
@@ -39,7 +38,7 @@ const Sidebar = () => {
         <span className='events comm'></span><span className='fnt'>Events</span>
       </div>
       <div className='sidebar-wrap'>
-        <span className='comm'><img src={Fav}/></span><span className='fnt'>Favourites</span>
+        <span className='comm'><img alt="image" src={Fav}/></span><span className='fnt'>Favourites</span>
       </div>
     </div>
   )

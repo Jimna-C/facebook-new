@@ -6,15 +6,12 @@ import {RiShareForwardLine} from 'react-icons/ri';
 import {AiOutlineLike} from 'react-icons/ai';
 import fav from '../../assets/fav.svg';
 import like from '../../assets/like.svg';
-import {newsFeedData} from './data';
-import { Navigate, useLocation } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
-import { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import {useNavigate} from "react-router-dom";
 
 const Newsfeed = () => {
 
- const {items,status}=useSelector(state=>state.newsfeed);
+ const {items}=useSelector(state=>state.newsfeed);
  const navigate=useNavigate();
 //  localStorage.setItem('newsfeeditems', JSON.stringify(items));
 //  var l=  JSON.parse(localStorage.getItem('newsfeeditems')) || [];
@@ -85,7 +82,7 @@ var m=  JSON.parse(localStorage.getItem('test')) || [];
       <div className='newsfeed' key={feed.id}>
     <div className='feed-head'>
      <div className='feed-head-left'>
-       <img src={feed.image}/>
+       <img alt="image" src={feed.image}/>
        <div className='feed-head-left-inner'>
          <h3>{feed.title}</h3>
          <span className='feed-head-left-inner-det'><p>{feed.time}</p> <FaGlobeAmericas/></span>
@@ -98,8 +95,8 @@ var m=  JSON.parse(localStorage.getItem('test')) || [];
     <div className='feed-title'>
     <p>{feed.content}</p>
     </div>
- {feed.contentImage.length==0?"":<div className='feed-middle'>
-     <img src={feed.contentImage}/>
+ {feed.contentImage.length===0?"":<div className='feed-middle'>
+     <img alt="image" src={feed.contentImage}/>
     </div>}
   
  
@@ -108,18 +105,18 @@ var m=  JSON.parse(localStorage.getItem('test')) || [];
        <div className='feed-last-fir-inner1'>
 
        
-       <span><img className='feed-last-fir-icons' src={like}/><img className='feed-last-fir-icons' src={fav}/><input type="text" value={feed.like}/></span>
+       <span><img alt="image" className='feed-last-fir-icons' src={like}/><img alt="image" className='feed-last-fir-icons' src={fav}/><input type="text" value={feed.like}/></span>
       
        </div>
        <div className='feed-last-fir-inner2'>
-       {feed.like.length==0 ? "": <span><p>{feed.comment}</p><FaRegCommentAlt className='feed-icon-comment'/></span>}
+       {feed.like.length===0 ? "": <span><p>{feed.comment}</p><FaRegCommentAlt className='feed-icon-comment'/></span>}
 
-       {feed.share.length==0 ? "": <span><p>{feed.share}</p><RiShareForwardLine className='feed-icon-comment ds'/></span>}
+       {feed.share.length===0 ? "": <span><p>{feed.share}</p><RiShareForwardLine className='feed-icon-comment ds'/></span>}
       
        </div>
      </div>
      <div className='feed-last-sec'>
-      <button className='feed-last-sec-inner' onClick={()=>handleLike(feed.like,feed.id,"liked")}><AiOutlineLike className={feed.par=="liked" ? "likep" : "feed-last-comm"} /><p className={feed.par=="liked" ? "likep" : ""} >Like</p></button>
+      <button className='feed-last-sec-inner' onClick={()=>handleLike(feed.like,feed.id,"liked")}><AiOutlineLike className={feed.par==="liked" ? "likep" : "feed-last-comm"} /><p className={feed.par==="liked" ? "likep" : ""} >Like</p></button>
       <div className='feed-last-sec-inner'><span className='feed-last-comm co'></span><p>Comment</p></div>
       <div className='feed-last-sec-inner'><span className='feed-last-comm sh'></span><p>Share</p></div>
      </div>
@@ -131,7 +128,7 @@ var m=  JSON.parse(localStorage.getItem('test')) || [];
       <div className='newsfeed' key={feed.id}>
     <div className='feed-head'>
      <div className='feed-head-left'>
-       <img src={feed.image}/>
+       <img alt="image" src={feed.image}/>
        <div className='feed-head-left-inner'>
          <h3>{feed.title}</h3>
          <span className='feed-head-left-inner-det'><p>{feed.time}</p> <FaGlobeAmericas/></span>
@@ -144,8 +141,8 @@ var m=  JSON.parse(localStorage.getItem('test')) || [];
     <div className='feed-title'>
     <p>{feed.content}</p>
     </div>
- {feed.contentImage.length==0?"":<div className='feed-middle'>
-     <img src={feed.contentImage}/>
+ {feed.contentImage.length===0?"":<div className='feed-middle'>
+     <img alt="image" src={feed.contentImage}/>
     </div>}
   
  
@@ -154,18 +151,18 @@ var m=  JSON.parse(localStorage.getItem('test')) || [];
        <div className='feed-last-fir-inner1'>
 
        
-       <span><img className='feed-last-fir-icons' src={like}/><img className='feed-last-fir-icons' src={fav}/><input type="text" value={feed.like}/></span>
+       <span><img alt="image" className='feed-last-fir-icons' src={like}/><img alt="image" className='feed-last-fir-icons' src={fav}/><input type="text" value={feed.like}/></span>
       
        </div>
        <div className='feed-last-fir-inner2'>
-       {feed.like.length==0 ? "": <span><p>{feed.comment}</p><FaRegCommentAlt className='feed-icon-comment'/></span>}
+       {feed.like.length===0 ? "": <span><p>{feed.comment}</p><FaRegCommentAlt className='feed-icon-comment'/></span>}
 
-       {feed.share.length==0 ? "": <span><p>{feed.share}</p><RiShareForwardLine className='feed-icon-comment ds'/></span>}
+       {feed.share.length===0 ? "": <span><p>{feed.share}</p><RiShareForwardLine className='feed-icon-comment ds'/></span>}
       
        </div>
      </div>
      <div className='feed-last-sec'>
-      <button className='feed-last-sec-inner' onClick={()=>handleLikesec(feed.like,feed.id,"liked")}><AiOutlineLike className={feed.par=="liked" ? "likep" : "feed-last-comm"} /><p className={feed.par=="liked" ? "likep" : ""}>Like</p></button>
+      <button className='feed-last-sec-inner' onClick={()=>handleLikesec(feed.like,feed.id,"liked")}><AiOutlineLike className={feed.par==="liked" ? "likep" : "feed-last-comm"} /><p className={feed.par==="liked" ? "likep" : ""}>Like</p></button>
       <div className='feed-last-sec-inner'><span className='feed-last-comm co'></span><p>Comment</p></div>
       <div className='feed-last-sec-inner'><span className='feed-last-comm sh'></span><p>Share</p></div>
      </div>

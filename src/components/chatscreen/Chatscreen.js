@@ -1,26 +1,24 @@
 import React from 'react';
 import './Chatscreen.css';
 import {IoMdCall, IoMdAddCircle, IoMdPhotos} from 'react-icons/io';
-import {BsFillCameraVideoFill, BsFileImage, BsEmojiSmile} from 'react-icons/bs';
-import {AiOutlineFileGif, AiFillLike, AiOutlineSend} from 'react-icons/ai';
-import profileOri from '../../assets/profile_ori.jpg';
+import {BsFillCameraVideoFill, BsFileImage} from 'react-icons/bs';
+import {AiOutlineFileGif, AiOutlineSend} from 'react-icons/ai';
 import {useNavigate} from "react-router-dom";
 import { useParams } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
-import { useState,useEffect,useRef } from 'react';
+import { useSelector } from 'react-redux';
+import { useState} from 'react';
 
 const Chatscreen = () => {
     const [contentchat, setContentchat] = useState();
   const {chatId} = useParams();
-  const {items,status}=useSelector(state=>state.chatscreen);
-  const chatdetail = items.find(items => items.id == chatId);
+  const {items}=useSelector(state=>state.chatscreen);
+  const chatdetail = items.find(items => items.id === chatId);
   var chatarray=chatdetail.messages; 
 
  
   const handleSubmit = (event) => {
     event.preventDefault();
     event.target.reset();
-    const formData = new FormData(event.target);
     var a = JSON.parse(localStorage.getItem('chat'+chatId))||chatarray;
     a=[...a,contentchat];
       console.log(a);
@@ -49,7 +47,7 @@ const Chatscreen = () => {
     <div className='chat-screen'>
         <div className='chat-screen-header'>
             <div className='chat-scrn-header-left'>
-                <span className='chat-scrn-head-img'><img src={chatdetail.image}/></span>
+                <span className='chat-scrn-head-img'><img alt="img" src={chatdetail.image}/></span>
                 <span className='chat-scrn-head-txt'><p className='fw'>{chatdetail.title}</p><p className='co'>Active 1h ago</p></span>
             </div>
             <div className='chat-scrn-header-right'>

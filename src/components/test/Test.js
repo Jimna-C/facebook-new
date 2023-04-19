@@ -1,7 +1,6 @@
 import React from 'react';
 import './Test.css';
-import { useState,useEffect } from 'react';
-import logo from '../../assets/icons/Logo.png';
+import { useState } from 'react';
 import theme from '../../assets/icons/theme.svg';
 import smile from '../../assets/icons/smile.svg';
 import gallery from '../../assets/icons/gallery.svg';
@@ -11,11 +10,9 @@ import mic from '../../assets/icons/mic.svg';
 import more from '../../assets/icons/more.svg';
 import {useNavigate} from "react-router-dom";
 import profileOri from '../../assets/profile_ori.jpg';
-import { useDispatch } from 'react-redux';
-import { addToCart } from '../features/newsfeedSlice';
+
 
 const Test = () => {
-  const [entries, setEntries] = useState([]);
   const [content, setContent] = useState();
   const [selectedImage, setSelectedImage] = useState([]);
  
@@ -23,9 +20,6 @@ const Test = () => {
   var a=[];
   const handleSubmit = (event) => {
     event.preventDefault();
-    const formData = new FormData(event.target);
-   
-    const newEntries = [];
     // for (const [name, value] of formData) {
     //  console.log(URL.createObjectURL([]));
       // {selectedImage ? URL.createObjectURL(selectedImage) : ""}
